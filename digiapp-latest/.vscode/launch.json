@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "DigiApplication",
+      "request": "launch",
+      "mainClass": "com.digi.app.DigiApplication",
+      "projectName": "app"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AppApplication<app>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.digi.app.AppApplication",
+      "projectName": "app",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

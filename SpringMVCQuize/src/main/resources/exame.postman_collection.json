@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "86af7159-dee7-4d80-9a8d-3cab6dc643e1",
+		"name": "exame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/article?name=java&toDate=20230101&fromDate=20240101",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"article"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "java"
+						},
+						{
+							"key": "toDate",
+							"value": "20230101"
+						},
+						{
+							"key": "fromDate",
+							"value": "20240101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"java 21\",\r\n    \"description\" : \"what is new in java 21\",\r\n    \"publisher\" :{\r\n        \"date\" : \"20240812\"\r\n        \"name\" : \"orelly\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/article/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"article",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
